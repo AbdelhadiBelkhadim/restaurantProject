@@ -2,6 +2,8 @@
 @import "tailwindcss";
 
 
+
+
 @keyframes slow-bounce {
   0%,
   100% {
@@ -14,4 +16,35 @@
 
 .slow-bounce {
   animation: slow-bounce 2s infinite ease-in-out;
+}
+
+@layer base {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Default */
+    padding-right: 1rem; /* Default */
+  }
+
+  @media (min-width: 640px) { /* sm */
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) { /* md */
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) { /* lg */
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
 }

@@ -45,13 +45,13 @@ const dropDownLinks = [
 
 const Navbar = () => {
   return (
-    <div className='bg-primary shadow-md px-8'>
-        <div className='container flex justify-between py-4 sm:py-3'>
+    <div className=' shadow-md px-8'>
+        <div className='container  flex justify-between py-4 sm:py-3'>
             {/*LOGO SECTION*/}
-            <div className='font-bold '>LOGO</div>
+            <div className='font-bold text-2xl py-4'>Logo</div>
             {/*NAVLINK SECTION*/}
             <div>
-                <ul className='sm:flex items-center gap-10'>
+                <ul className='hidden sm:flex items-center gap-10'>
                 {
                         NavLinks.map(({ id, name, link }) => (
                             <li key={id}>
@@ -89,7 +89,7 @@ const Navbar = () => {
 
 
                     <li>
-                        <button className='flex justify-center items-center gap-2 bg-[#21D4B9] text-white py-4 px-5 h-[4px] hover:scale-125 duration-300'>
+                        <button className=' flex justify-center items-center gap-2 bg-[#21D4B9] text-white py-4 px-5 h-[4px] hover:scale-125 duration-300'>
                             <FaUser />
                             My Account
                         </button>
