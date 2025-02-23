@@ -16,7 +16,7 @@ const BgStyle = {
 const Hero = () => {
   return (
     <>
-    <div style={BgStyle} className='relative z-[-1]'>
+    <div style={BgStyle} className=' z-[-1]'>
       <div className='container py-16 sm:py-0 '>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]'>
           <div className='space-y-7 text-[#303030] order-2 sm:order-1'>
