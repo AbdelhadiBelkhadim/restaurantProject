@@ -43,7 +43,7 @@ const dropDownLinks = [
 
 ]
 
-const Navbar = () => {
+const Navbar = ({HanlePopup}) => {
   return (
     <div className=' shadow-md px-8'>
         <div className='container  flex justify-between py-4 sm:py-3'>
@@ -89,7 +89,7 @@ const Navbar = () => {
 
 
                     <li>
-                        <button className=' flex justify-center items-center gap-2 bg-[#21D4B9] text-white py-4 px-5 h-[4px] hover:scale-125 duration-300'>
+                        <button onClick={HanlePopup} className=' flex justify-center items-center gap-2 bg-[#21D4B9] text-white py-4 px-5 h-[4px] hover:scale-125 duration-300'>
                             <FaUser />
                             My Account
                         </button>
